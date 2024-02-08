@@ -1,0 +1,29 @@
+
+post http://localhost:8000/signup
+Content-Type: application/json
+content 
+
+{   
+    "name": "Buyer22 User",
+    "profile_picture": null,
+    "email": "buyer-authentication1100@example.com",
+    "phone": null,
+    "role": "buyer",
+    "address": "789 Buyer Lane",
+    "city": "Buyer City",
+    "postal_code": "54321",
+    "password": "buyerpassword"
+  }
+
+### 
+POST http://localhost:8000/api/login
+Content-Type: application/json
+content 
+
+{
+    "email":"buyer-authentication1@example.com",
+    "password":"buyerpassword"
+}
+###
+
+GET http://localhost:8000/api/logout
